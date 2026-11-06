@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HP NextGen — A Young Entrepreneurs Program</title>
+<meta name="description" content="HP NextGen is a starter program from HP Services that helps young people launch a real service business: a website, honest pricing, and a way to track the money.">
+<style>
+:root{
+  --ink:#10181c; --muted:#5a6a72; --line:#e2e8ea;
+  --paper:#ffffff; --wash:#f5f8f9; --brand:#0b6b5e; --accent:#12a488;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em}
+.mark{width:30px;height:30px;border-radius:8px;background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-size:14px;font-weight:800}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:12px;letter-spacing:0}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px;background:
+  radial-gradient(900px 320px at 12% -10%, #e8f5f1 0%, transparent 70%),
+  var(--paper)}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--brand);background:#e8f5f1;
+  padding:6px 11px;border-radius:999px;margin-bottom:20px}
+h1{font-size:clamp(30px,5.4vw,50px);line-height:1.1;letter-spacing:-.025em;margin:0 0 18px;max-width:17ch}
+.lede{font-size:clamp(16px,2.1vw,19px);color:var(--muted);max-width:60ch;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;text-decoration:none;
+  font-weight:600;font-size:15px;border:1px solid transparent}
+.btn.primary{background:var(--brand);color:#fff}
+.btn.primary:hover{background:#095448}
+.btn.ghost{border-color:var(--line);color:var(--ink);background:#fff}
+.btn.ghost:hover{border-color:#c8d4d7}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(21px,3vw,27px);letter-spacing:-.015em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 30px;max-width:62ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(232px,1fr))}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
+.card h3{margin:0 0 6px;font-size:16px;letter-spacing:-.01em}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.num{width:26px;height:26px;border-radius:50%;background:var(--wash);color:var(--brand);
+  display:grid;place-items:center;font-size:13px;font-weight:700;margin-bottom:12px}
+.include{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.include li{display:flex;gap:12px;font-size:15px;align-items:flex-start}
+.include svg{flex:0 0 18px;margin-top:3px}
+.participant{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;
+  align-items:center;border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--wash)}
+.participant strong{display:block;font-size:17px;letter-spacing:-.01em}
+.participant span{color:var(--muted);font-size:14.5px}
+.note{border-left:3px solid var(--accent);padding:2px 0 2px 16px;color:var(--muted);
+  font-size:14.5px;max-width:64ch;margin:26px 0 0}
+.contact{background:var(--ink);color:#fff;border:0}
+.contact h2{color:#fff}
+.contact p{color:#b9c6cb;max-width:52ch}
+.contact a.mail{color:#7fe3cd;text-decoration:none;font-weight:600}
+footer.site{padding:26px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+@media (max-width:520px){nav a{margin-left:12px} .hero{padding:52px 0 44px}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">
+      <span class="mark">N</span>
+      <span>HP NextGen<small>A young entrepreneurs program</small></span>
+    </div>
+    <nav>
+      <a href="#program">Program</a>
+      <a href="#businesses">Businesses</a>
+      <a href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Sponsored by HP Services</span>
+    <h1>Start a real business, not a school project.</h1>
+    <p class="lede">HP NextGen gives a young person the boring parts already handled — a proper
+      web address, prices that don't lose money, and a simple way to track what comes in and
+      what goes back out. They do the work and keep what they earn.</p>
+    <div class="actions">
+      <a class="btn primary" href="#join">Apply to the program</a>
+      <a class="btn ghost" href="#businesses">See who's in it</a>
+    </div>
+  </div>
+</div>
+
+<section id="program">
+  <div class="wrap">
+    <h2>What the program actually provides</h2>
+    <p class="sub">Not a course and not a certificate. A starter kit for a working service
+      business that a young person can run themselves.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="num">1</div>
+        <h3>Your own web address</h3>
+        <p>Something like <em>yourbusiness</em>.hpnextgen.com — short enough to say out loud
+          and type from a phone. No Wix link, no free-hosting banner.</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h3>Pricing that holds up</h3>
+        <p>We work through supplies, time, and fuel so a $25 job doesn't quietly cost $30 to
+          finish. Flat prices get size and condition limits.</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h3>Money tracking</h3>
+        <p>A plain sheet for jobs, expenses, and what's actually left. Enough to know whether
+          the business is real.</p>
+      </div>
+      <div class="card">
+        <div class="num">4</div>
+        <h3>Coaching on the basics</h3>
+        <p>Answering customers, showing up when you said you would, quoting before the work,
+          and getting paid without awkwardness.</p>
+      </div>
+    </div>
+
+    <p class="note">What we don't do: take a cut of earnings, own your customer list, or make
+      the business depend on us. If the site moves to its own domain later, that's fine.</p>
+  </div>
+</section>
+
+<section id="businesses">
+  <div class="wrap">
+    <h2>Who's in the program</h2>
+    <p class="sub">Each business runs on its own page, under its own name.</p>
+    <div class="participant">
+      <div>
+        <strong>A&amp;N Exterior Cleaning</strong>
+        <span>Trash can cleaning &middot; Driveway pressure washing &middot; Fate, TX</span>
+      </div>
+      <a class="btn ghost" href="https://ancleaning.hpnextgen.com/">View business</a>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <h2>How to apply</h2>
+    <p class="sub">The bar is a real service someone will pay for, a way to get to the job,
+      and a willingness to finish what you quote.</p>
+    <ul class="include">
+      <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="#12a488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><strong>A service, not an idea.</strong> Mowing, cleaning, detailing, hauling, pet care, small repairs — something a neighbor can buy this month.</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="#12a488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><strong>Transportation and supervision.</strong> A parent or guardian needs to be involved. We don't place anyone at a job site.</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10.5l4 4 8-9" stroke="#12a488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><strong>Proof of the work.</strong> Real photos of finished jobs. No stock pictures and no invented reviews on any NextGen site.</span></li>
+    </ul>
+    <p class="note">HP NextGen is an independent program from HP Services. It is not sponsored by,
+      affiliated with, or endorsed by any school district. Ages and availability vary by
+      participant, and we keep the number of businesses small on purpose.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Interested?</h2>
+    <p>Questions about the program, or you run a young person's business and want in — reach out
+      to HP Services directly.</p>
+    <p><a class="mail" href="mailto:holten.pemberton@gmail.com">holten.pemberton@gmail.com</a></p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 HP Services &middot; HP NextGen</span>
+    <span>Fate, Texas</span>
+  </div>
+</footer>
+
+</body>
+</html>
