@@ -3,359 +3,107 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HP NextGen — A Young Entrepreneurs Program</title>
-<meta name="description" content="HP NextGen is a starter program from HP Services that helps a young person launch a real service business: a real web address, honest pricing, and a simple way to track the money.">
-<meta name="theme-color" content="#0b1f2a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2312a488'/%3E%3Cpath d='M9 23V9h3l8 8.5V9h3v14h-3l-8-8.5V23z' fill='%23fff'/%3E%3C/svg%3E">
+<title>HP NextGen — Young Entrepreneurs Program by HP Services</title>
+<meta name="description" content="HP NextGen helps a young person launch a real service business: a real web address, honest pricing, and a simple way to track the money.">
+<meta name="theme-color" content="#08090a">
 <style>
-:root{
-  --deep:#0b1f2a; --ink:#10222b; --brand:#12a488; --brand-dk:#0c7f68; --gold:#e2b857;
-  --wash:#f4f7f6; --line:#e0e7e6; --muted:#5a6b72; --paper:#fff;
-  --shadow:0 20px 44px -26px rgba(11,31,42,.5);
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:16.5px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing:antialiased}
-img,svg{max-width:100%}
-a{color:var(--brand-dk)}
-.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
-
-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.93);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px}
-.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
-.mark{width:38px;height:38px;border-radius:11px;background:var(--deep);color:var(--brand);
-  display:grid;place-items:center;font-weight:800;font-size:15px;flex:0 0 38px;letter-spacing:-.02em}
-.logo b{display:block;font-size:16px;letter-spacing:-.02em;line-height:1.15}
-.logo span{display:block;font-size:11.5px;letter-spacing:.10em;text-transform:uppercase;
-  color:var(--muted);font-weight:600}
-nav{display:flex;gap:20px}
-nav a{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:600}
-nav a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;
-  border-radius:11px;text-decoration:none;font-weight:650;font-size:15px;border:1px solid transparent;
-  line-height:1;transition:transform .12s ease,background .15s ease}
-.btn:active{transform:translateY(1px)}
-.btn-primary{background:var(--brand);color:#fff}
-.btn-primary:hover{background:var(--brand-dk)}
-.btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
-.btn-ghost:hover{border-color:#c6d5d3}
-.btn-dark{background:var(--deep);color:#fff}
-.btn-dark:hover{background:#132f3d}
-
-.hero{background:
-   radial-gradient(700px 400px at 90% -20%, #14384a 0%, transparent 60%),
-   radial-gradient(600px 360px at 0% 120%, #0f2b38 0%, transparent 62%),
-   var(--deep);
-  color:#e9f2f1;padding:70px 0 78px}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:750;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--brand);
-  border:1px solid rgba(18,164,136,.4);background:rgba(18,164,136,.1);
-  padding:7px 12px;border-radius:999px;margin-bottom:22px}
-h1{font-size:clamp(31px,4.7vw,51px);line-height:1.06;letter-spacing:-.032em;margin:0 0 18px;color:#fff}
-.hero p{color:#b4c9cc;font-size:clamp(16px,1.6vw,18px);max-width:46ch;margin:0 0 26px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:11px}
-.hero .btn-ghost{background:transparent;border-color:rgba(255,255,255,.28);color:#fff}
-.hero .btn-ghost:hover{background:rgba(255,255,255,.1)}
-.art-card{background:linear-gradient(160deg,#123543,#0d2632);border:1px solid rgba(255,255,255,.1);
-  border-radius:20px;padding:16px;box-shadow:var(--shadow)}
-
-section{padding:66px 0}
-.sec-head{max-width:62ch;margin:0 0 34px}
-.kicker{font-size:11.5px;font-weight:750;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--brand-dk);margin:0 0 10px}
-h2{font-size:clamp(22px,2.9vw,31px);letter-spacing:-.025em;line-height:1.16;margin:0 0 10px}
-.sec-head p{color:var(--muted);margin:0}
-
-.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{border:1px solid var(--line);border-radius:17px;padding:24px;background:#fff;
-  transition:transform .18s ease,box-shadow .18s ease}
-.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.card .num{width:30px;height:30px;border-radius:9px;background:var(--wash);color:var(--brand-dk);
-  display:grid;place-items:center;font-weight:800;font-size:13.5px;margin-bottom:14px}
-.card h3{margin:0 0 6px;font-size:17px;letter-spacing:-.015em}
-.card p{margin:0;color:var(--muted);font-size:14.8px}
-
-.biz{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;
-  display:grid;grid-template-columns:1.15fr .85fr}
-.biz-main{padding:28px}
-.biz-main h3{margin:0 0 4px;font-size:21px;letter-spacing:-.02em}
-.biz-main .svc{color:var(--muted);font-size:14.5px;margin:0 0 16px}
-.biz-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
-.tag{background:var(--wash);border:1px solid var(--line);border-radius:8px;padding:5px 10px;
-  font-size:12.5px;font-weight:650;color:var(--ink)}
-.biz-side{background:var(--wash);border-left:1px solid var(--line);padding:24px;
-  display:flex;flex-direction:column;gap:14px;justify-content:center}
-.biz-side .row{font-size:14px;color:var(--muted)}
-.biz-side .row b{display:block;color:var(--ink);font-size:16px;letter-spacing:-.01em}
-
-.creed{background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.creed .grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.creed .item{padding:0}
-.creed h3{font-size:15.5px;margin:0 0 4px}
-.creed p{margin:0;color:var(--muted);font-size:14.5px}
-
-.steps{list-style:none;padding:0;margin:0;display:grid;gap:22px;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.steps li{border-top:2px solid var(--brand);padding-top:16px}
-.steps .n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;
-  background:var(--deep);color:var(--brand);font-size:13px;font-weight:800;margin-bottom:10px}
-.steps strong{display:block;font-size:16px;margin-bottom:3px}
-.steps span{color:var(--muted);font-size:14.7px}
-
-.apply{background:var(--deep);color:#e9f2f1}
-.apply .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
-.apply h2{color:#fff}
-.apply p{color:#b4c9cc;margin:0 0 18px;max-width:46ch}
-.apply .btn-ghost{background:transparent;border-color:rgba(255,255,255,.28);color:#fff}
-.apply .btn-ghost:hover{background:rgba(255,255,255,.1)}
-.qrbox{background:#fff;border-radius:16px;padding:12px;line-height:0;box-shadow:var(--shadow);justify-self:start}
-.qrbox img{width:168px;height:168px;display:block}
-.qr-cap{text-align:center;color:#3d5b60;font-size:11px;font-weight:700;letter-spacing:.06em;
-  text-transform:uppercase;padding-top:8px}
-.note{border-left:3px solid var(--gold);padding:2px 0 2px 16px;color:var(--muted);
-  font-size:14.2px;max-width:64ch;margin:24px 0 0}
-
-footer{padding:26px 0;color:var(--muted);font-size:13.5px;border-top:1px solid var(--line)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
-
-@media (max-width:860px){
-  .hero .wrap,.biz,.apply .wrap{grid-template-columns:1fr}
-  .hero{padding:46px 0 54px}
-  .art-card{order:-1}
-  nav{display:none}
-  .biz-side{border-left:0;border-top:1px solid var(--line)}
-  section{padding:52px 0}
-}
+:root{--black:#08090a;--black2:#111417;--blue:#00aeea;--blue2:#2dd4ff;--white:#fff;--muted:#b8c7cf;--line:rgba(255,255,255,.14);--cream:#fff8ed;--ink:#0b1114;--radius:28px;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Inter,ui-sans-system,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue2);font-weight:900}.kicker:after{content:"";display:block;width:52px;height:4px;background:var(--blue);border-radius:99px;margin-top:12px}
+.topbar{position:static;background:rgba(8,9,10,.88);border-bottom:1px solid var(--line)}.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{width:46px;height:46px;object-fit:cover;border-radius:14px;box-shadow:0 0 0 2px rgba(255,255,255,.28)}.brand strong{font-size:17px;line-height:1.05;text-transform:uppercase}.brand small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:3px}.nav{display:flex;gap:22px;font-size:14px;font-weight:700}.nav a{text-decoration:none;color:#e5f6ff}.callbox{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.callbox a,.button{text-decoration:none;font-weight:900;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 18px;font-size:14px}.callbox a{background:#fff;color:#050607}.callbox a.alt{background:var(--blue);color:white}
+.hero{background:radial-gradient(circle at 88% 5%,rgba(0,174,234,.32),transparent 34%),linear-gradient(130deg,#050607 0%,#10161b 58%,#071d29 100%);padding:86px 0 68px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.85fr);gap:52px;align-items:center}.hero h1{font-size:clamp(56px,8vw,104px);line-height:.9;letter-spacing:-.055em;margin:20px 0 22px;text-transform:uppercase}.hero h1 span{display:block;color:var(--blue2)}.hero p{max-width:570px;font-size:clamp(18px,2vw,23px);line-height:1.55;color:#d8e8ef;margin:0}.lead-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{background:var(--blue);color:white;box-shadow:0 16px 35px rgba(0,174,234,.28)}.button.white{background:#fff;color:#050607}.button.ghost{background:transparent;border:1px solid rgba(255,255,255,.35);box-shadow:none}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;max-width:600px}.stat{border:1px solid var(--line);background:rgba(255,255,255,.055);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px;color:var(--blue2)}.stat span{font-size:13px;color:var(--muted);line-height:1.35;display:block;margin-top:4px}
+.panel{background:#fff;color:#07090a;border-radius:36px;padding:14px;box-shadow:0 34px 80px rgba(0,0,0,.42);transform:rotate(1.2deg)}
+.panel .frame{border-radius:26px;overflow:hidden;background:#000}
+.panel img{display:block;width:100%;height:620px;object-fit:cover;object-position:top center;background:#000}
+.panel .caption{padding:18px 6px 6px}
+.panel .caption strong{font-size:18px;text-transform:uppercase;letter-spacing:-.02em;display:block;margin-bottom:6px}
+.panel .caption p{color:#52626b;font-size:15px;line-height:1.55;margin:0}
+.panel .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.panel .badges span{background:#e6f7ff;border:1px solid #b8eaff;color:#047aab;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.section{padding:92px 0}.section.light{background:var(--cream);color:#101417}.section h2{font-size:clamp(38px,6vw,72px);line-height:.95;letter-spacing:-.045em;margin:18px 0 18px;text-transform:uppercase}.section h2 em{color:var(--blue);font-style:normal}.section p{color:#4e6068;max-width:680px;font-size:18px;line-height:1.6;margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}.card{background:#fff;color:#0b1114;border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 60px rgba(15,23,42,.12);border:1px solid rgba(0,0,0,.06);display:flex;flex-direction:column;padding:28px}.card .num{width:30px;height:30px;border-radius:9px;background:#e6f7ff;color:#047aab;display:grid;place-items:center;font-weight:900;font-size:13.5px;margin-bottom:14px}.card h3{font-size:24px;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 12px}.card p{color:#52626b;font-size:16px;line-height:1.6;margin:0}
+.biz-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}.biz{background:#fff;color:#0b1114;border-radius:var(--radius);overflow:hidden;box-shadow:0 24px 60px rgba(15,23,42,.12);border:1px solid rgba(0,0,0,.06);display:flex;flex-direction:column}.biz-photo{height:320px;position:relative;background:#000;overflow:hidden}.biz-photo a{display:block;width:100%;height:100%}.biz-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}.biz-photo .photo-label{position:absolute;top:16px;left:16px;background:rgba(0,0,0,.78);color:#fff;border-radius:12px;padding:10px 12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:12px;pointer-events:none}.biz-photo .zoom{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,.92);color:#000;border-radius:999px;padding:8px 11px;font-weight:900;font-size:12px;letter-spacing:.04em;text-transform:uppercase;pointer-events:none}.biz-body{padding:28px;display:flex;flex-direction:column;flex:1}.biz-body h3{font-size:26px;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 8px}.biz-body .svc{color:#52626b;font-size:16px;margin:0 0 14px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}.tags span{background:#eef4f6;border:1px solid #e0e7e6;border-radius:999px;padding:7px 10px;font-size:12.5px;font-weight:800}.biz-body .button{margin-top:auto;background:#08090a;color:#fff;box-shadow:none}
+.process{background:linear-gradient(140deg,#050607,#0b2638)}.process-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:start}.process h2{color:white}.process p{color:var(--muted)}.steps{display:grid;gap:14px}.step{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:22px;padding:22px;display:grid;grid-template-columns:54px 1fr;gap:18px}.step b{font-size:42px;color:var(--blue2);line-height:1}.step strong{font-size:19px}.step span{display:block;color:var(--muted);margin-top:6px;line-height:1.55;font-size:15px}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:52px}.faq-list{display:grid;gap:14px}.faq{background:#fff;border:1px solid #e4e7e8;border-radius:20px;padding:20px}.faq summary{cursor:pointer;font-weight:900;font-size:17px}.faq p{font-size:15px;margin-top:10px;color:#5b6a72}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,430px);gap:48px;align-items:center}.contact h2{font-size:clamp(42px,6vw,76px);line-height:.94}.contact-panel{background:#fff;color:#0b1114;border-radius:28px;padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.35)}.contact-panel h3{font-size:22px;text-transform:uppercase;letter-spacing:-.02em;margin:14px 0 8px}.contact-panel p{font-size:15px}.qrbox{display:grid;place-items:center;background:#fff;border:1px solid #e0e7e6;border-radius:18px;padding:14px;margin:14px 0}.qrbox img{width:168px;height:168px}.contact-panel .button{width:100%;margin-top:14px;background:#08090a;color:white;box-shadow:none}.contact-panel .button.blue{background:var(--blue);color:white}
+footer{padding:32px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}.footer-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:900px){.nav{display:none}.hero-grid,.process-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}.grid,.biz-grid{grid-template-columns:1fr}.callbox{justify-content:flex-start}}
+@media(max-width:560px){.section{padding:68px 0}.hero{padding:56px 0 52px}.hero h1{font-size:56px}.topbar-in{padding:10px 0}.brand img{width:40px;height:40px}.brand strong{font-size:15px}.callbox a{padding:10px 13px;font-size:12px}.stats{grid-template-columns:1fr}.panel{border-radius:28px;padding:10px}.panel img{height:520px}.card{padding:22px}.biz-photo{height:280px}.biz-body{padding:22px}.step{grid-template-columns:44px 1fr}.step b{font-size:34px}.contact-panel{padding:23px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="wrap hd">
-    <a class="logo" href="/">
-      <span class="mark">N</span>
-      <span><b>HP NextGen</b><span>Young entrepreneurs</span></span>
-    </a>
-    <nav>
-      <a href="#program">Program</a>
-      <a href="#businesses">Businesses</a>
-      <a href="#apply">Apply</a>
-    </nav>
-    <a class="btn btn-dark" href="#apply">Get started</a>
+<header class="topbar"><div class="wrap topbar-in">
+  <a class="brand" href="#top"><img src="logo.png" alt="HP NextGen logo"><span><strong>HP NextGen</strong><small>Young entrepreneurs</small></span></a>
+  <nav class="nav" aria-label="Primary"><a href="#program">Program</a><a href="#businesses">Businesses</a><a href="#apply">Apply</a></nav>
+  <div class="callbox"><a href="#apply">Get started</a><a class="alt" href="https://ancleaning.hpnextgen.com/">See A&amp;N live</a></div>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="kicker">Sponsored by HP Services</p>
+    <h1>Start a real<br><span>business.</span></h1>
+    <p>HP NextGen handles the boring parts — a real web address, prices that don’t lose money, and a simple way to track what comes in. They do the work and keep what they earn.</p>
+    <div class="lead-actions"><a class="button" href="#apply">Apply to the program</a><a class="button white" href="#businesses">See who’s in it</a><a class="button ghost" href="https://ancleaning.hpnextgen.com/">See A&amp;N live</a></div>
+    <div class="stats"><div class="stat"><b>1</b><span>Live business now: A&amp;N Cleaning</span></div><div class="stat"><b>2</b><span>Flat-rate services in Fate, TX</span></div><div class="stat"><b>Fate</b><span>Home base for HP NextGen</span></div></div>
   </div>
-</header>
+  <aside class="panel" aria-label="A and N Cleaning example site preview">
+    <div class="frame"><a href="https://ancleaning.hpnextgen.com/full-flyer.jpg" target="_blank" rel="noopener"><img src="https://ancleaning.hpnextgen.com/full-flyer.jpg" alt="A and N Cleaning flyer showing trash can cleaning and driveway pressure washing — click to view full resolution"></a></div>
+    <div class="caption"><strong>One example is already live</strong><p>A&amp;N Exterior Cleaning — trash bins at $15 per bin, driveways at $25 per driveway, right here in Fate, Texas. Tap the photo to see it full size.</p><div class="badges"><span>A&amp;N Cleaning</span><span>$15 / bin</span><span>$25 / driveway</span></div></div>
+  </aside>
+</div></section>
 
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="eyebrow">
-        <svg width="7" height="7" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="#12a488"/></svg>
-        Sponsored by HP Services
-      </span>
-      <h1>Start a real business, not a school project.</h1>
-      <p>HP NextGen handles the boring parts — a real web address, prices that don't lose
-        money, and a simple way to track what comes in. They do the work and keep what they
-        earn.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#apply">Apply to the program</a>
-        <a class="btn btn-ghost" href="#businesses">See who's in it</a>
-      </div>
-    </div>
-    <div class="art-card">
-      <svg viewBox="0 0 400 300" role="img" aria-label="Illustration of a small business storefront with a rising chart">
-        <defs>
-          <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#123543"/><stop offset="1" stop-color="#0d2632"/>
-          </linearGradient>
-          <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#12a488"/><stop offset="1" stop-color="#0c7f68"/>
-          </linearGradient>
-        </defs>
-        <rect width="400" height="300" rx="14" fill="url(#bg)"/>
-        <!-- storefront -->
-        <rect x="86" y="112" width="150" height="120" rx="8" fill="url(#stone)"/>
-        <path d="M78 112 h166 l-14 -22 h-138 z" fill="#e9f2f1"/>
-        <rect x="100" y="140" width="52" height="46" rx="5" fill="#0d2632" opacity=".45"/>
-        <rect x="100" y="140" width="52" height="46" rx="5" fill="none" stroke="#e9f2f1" stroke-width="2.5" opacity=".7"/>
-        <rect x="170" y="140" width="46" height="92" rx="5" fill="#e9f2f1" opacity=".85"/>
-        <circle cx="207" cy="188" r="3.4" fill="#0c7f68"/>
-        <!-- chart -->
-        <g stroke="#e2b857" stroke-width="4" stroke-linecap="round" fill="none">
-          <path d="M252 214 l26 -30 22 12 34 -46"/>
-        </g>
-        <g fill="#e2b857">
-          <circle cx="252" cy="214" r="5"/><circle cx="278" cy="184" r="5"/>
-          <circle cx="300" cy="196" r="5"/><circle cx="334" cy="150" r="5"/>
-        </g>
-        <path d="M330 144 l14 -4 2 15" stroke="#e2b857" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- ground -->
-        <path d="M60 262 h292" stroke="#e9f2f1" stroke-width="3" opacity=".25" stroke-linecap="round"/>
-        <!-- sparkles -->
-        <g fill="#e9f2f1" opacity=".7">
-          <path d="M72 74 l2.6 6.6 6.6 2.6 -6.6 2.6 -2.6 6.6 -2.6-6.6 -6.6-2.6 6.6-2.6z"/>
-          <path d="M336 92 l2 5 5 2 -5 2 -2 5 -2-5 -5-2 5-2z" opacity=".55"/>
-        </g>
-        </svg>
-    </div>
+<section class="section light" id="program"><div class="wrap">
+  <p class="kicker">What you actually get</p>
+  <h2>Not a course.<br><em>A working kit.</em></h2>
+  <p>Four things, in plain terms. No certificate, no subscription, no cut of the money.</p>
+  <div class="grid">
+    <article class="card"><span class="num">01</span><h3>Your own web address</h3><p>Something like <em>yourbusiness</em>.hpnextgen.com — short enough to say out loud and type from a phone. No Wix link, no free-host banner.</p></article>
+    <article class="card"><span class="num">02</span><h3>Pricing that holds up</h3><p>We work through supplies, time and fuel so a $25 job doesn’t quietly cost $30 to finish. Flat prices get size and condition limits.</p></article>
+    <article class="card"><span class="num">03</span><h3>A way to count the money</h3><p>A plain sheet for jobs, expenses and what’s actually left. Enough to know whether the business is real.</p></article>
+    <article class="card"><span class="num">04</span><h3>Cards, flyers, QR codes</h3><p>Printed business cards and a flyer with a scannable code, so a customer can find you again without hunting.</p></article>
   </div>
-</div>
+</div></section>
 
-<section id="program">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">What you actually get</p>
-      <h2>Not a course. A working starter kit.</h2>
-      <p>Four things, in plain terms. No certificate, no subscription, no cut of the money.</p>
-    </div>
-    <div class="grid">
-      <div class="card">
-        <div class="num">1</div>
-        <h3>Your own web address</h3>
-        <p>Something like <em>yourbusiness</em>.hpnextgen.com — short enough to say out loud
-          and type from a phone. No Wix link, no free-host banner.</p>
-      </div>
-      <div class="card">
-        <div class="num">2</div>
-        <h3>Pricing that holds up</h3>
-        <p>We work through supplies, time and fuel so a $25 job doesn't quietly cost $30 to
-          finish. Flat prices get size and condition limits.</p>
-      </div>
-      <div class="card">
-        <div class="num">3</div>
-        <h3>A way to count the money</h3>
-        <p>A plain sheet for jobs, expenses and what's actually left. Enough to know whether
-          the business is real.</p>
-      </div>
-      <div class="card">
-        <div class="num">4</div>
-        <h3>Cards, flyers, QR codes</h3>
-        <p>Printed business cards and a flyer with a scannable code, so a customer can find
-          you again without hunting.</p>
-      </div>
-    </div>
-    <p class="note">What we don't do: take a cut, own the customer list, or make the business
-      depend on us. If it moves to its own domain later, that's fine.</p>
+<section class="section" id="businesses"><div class="wrap">
+  <p class="kicker">Live now</p>
+  <h2>Who’s in the<br><em>program</em></h2>
+  <p>Each business runs on its own page, under its own name. One finished example is live today.</p>
+  <div class="biz-grid">
+    <article class="biz">
+      <div class="biz-photo"><a href="https://ancleaning.hpnextgen.com/full-bin.jpg" target="_blank" rel="noopener" aria-label="View the full resolution A and N bin photo"><img src="https://ancleaning.hpnextgen.com/full-bin.jpg" alt="A and N Cleaning before and after trash bins — tap to view full size"><span class="photo-label">Before / After</span><span class="zoom">Tap to view full size</span></a></div>
+      <div class="biz-body"><h3>A&amp;N Exterior Cleaning</h3><p class="svc">Trash bin cleaning &amp; driveway pressure washing — Fate, TX</p><div class="tags"><span>$15 / bin</span><span>$25 / driveway</span><span>Fate, TX</span><span>ancleaning.hpnextgen.com</span></div><a class="button" href="https://ancleaning.hpnextgen.com/">View the site</a></div>
+    </article>
+    <article class="biz">
+      <div class="biz-photo"><a href="https://ancleaning.hpnextgen.com/full-driveway.jpg" target="_blank" rel="noopener" aria-label="View the full resolution A and N driveway photo"><img src="https://ancleaning.hpnextgen.com/full-driveway.jpg" alt="A and N Cleaning driveway pressure washing — tap to view full size"><span class="photo-label">Driveway</span><span class="zoom">Tap to view full size</span></a></div>
+      <div class="biz-body"><h3>Built to be found</h3><p class="svc">Every NextGen page links back here, so a customer who sees one business can find the program and the next one.</p><div class="tags"><span>Real photos</span><span>Flat rates</span><span>QR print kit</span><span>hpnextgen.com</span></div><a class="button" href="#apply">Ask about the program</a></div>
+    </article>
   </div>
-</section>
+</div></section>
 
-<section id="businesses" style="background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">Live now</p>
-      <h2>Who's in the program</h2>
-      <p>Each business runs on its own page, under its own name.</p>
-    </div>
-
-    <div class="biz">
-      <div class="biz-main">
-        <h3>A&amp;N Exterior Cleaning</h3>
-        <p class="svc">Trash bin cleaning &amp; driveway pressure washing</p>
-        <div class="biz-tags">
-          <span class="tag">$15 / bin</span>
-          <span class="tag">$25 / driveway</span>
-          <span class="tag">Fate, TX</span>
-        </div>
-        <a class="btn btn-primary" href="https://ancleaning.hpnextgen.com/">View the site</a>
-      </div>
-      <div class="biz-side">
-        <div class="row"><b>ancleaning.hpnextgen.com</b>Their own address</div>
-        <div class="row"><b>First participant</b>Joined November 2026</div>
-      </div>
-    </div>
+<section class="section process" id="how"><div class="wrap process-grid">
+  <div><p class="kicker">The rules</p><h2>What the program<br>asks of you</h2><p>Straightforward expectations so the business stays real and the customer knows what they’re getting.</p></div>
+  <div class="steps">
+    <div class="step"><b>01</b><div><strong>A service, not an idea</strong><span>Mowing, cleaning, detailing, hauling, pet care, small repairs — something a neighbor can buy this month.</span></div></div>
+    <div class="step"><b>02</b><div><strong>Transport and supervision</strong><span>A parent or guardian stays involved. We don’t place anyone at a job site.</span></div></div>
+    <div class="step"><b>03</b><div><strong>Proof of the work</strong><span>Real photos of finished jobs. No stock pictures, no invented reviews on any NextGen site.</span></div></div>
+    <div class="step"><b>04</b><div><strong>Finish what you quote</strong><span>Show up when you said. If the price was wrong, the customer doesn’t eat the difference.</span></div></div>
   </div>
-</section>
+</div></section>
 
-<section class="creed">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">The rules</p>
-      <h2>What the program asks of you</h2>
-    </div>
-    <div class="grid">
-      <div class="item">
-        <h3>A service, not an idea</h3>
-        <p>Mowing, cleaning, detailing, hauling, pet care, small repairs — something a
-          neighbor can buy this month.</p>
-      </div>
-      <div class="item">
-        <h3>Transport and supervision</h3>
-        <p>A parent or guardian stays involved. We don't place anyone at a job site.</p>
-      </div>
-      <div class="item">
-        <h3>Proof of the work</h3>
-        <p>Real photos of finished jobs. No stock pictures, no invented reviews on any
-          NextGen site.</p>
-      </div>
-      <div class="item">
-        <h3>Finish what you quote</h3>
-        <p>Show up when you said. If the price was wrong, the customer doesn't eat the
-          difference.</p>
-      </div>
-    </div>
+<section class="section light" id="apply"><div class="wrap faq-grid">
+  <div><p class="kicker">Applying</p><h2>Three steps to<br><em>a live page</em></h2><p>Tell us the business, work the numbers, then get your page and print kit. We keep the number of businesses small on purpose.</p></div>
+  <div class="faq-list">
+    <details class="faq" open><summary>1 — Tell us the business</summary><p>What you do, where you’ll do it, and what you want to charge.</p></details>
+    <details class="faq"><summary>2 — Work the numbers</summary><p>One short session on costs and pricing — this is where most small businesses get quietly buried.</p></details>
+    <details class="faq"><summary>3 — Get your page and print kit</summary><p>Site live on your own subdomain, plus cards and a flyer with a QR code.</p></details>
+    <details class="faq"><summary>What we don’t do</summary><p>Take a cut, own the customer list, or make the business depend on us. If it moves to its own domain later, that’s fine. HP NextGen is independent of any school district.</p></details>
   </div>
-</section>
+</div></section>
 
-<section id="apply">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">Applying</p>
-      <h2>Three steps to a live business page</h2>
-    </div>
-    <ol class="steps">
-      <li>
-        <span class="n">1</span>
-        <strong>Tell us the business</strong>
-        <span>What you do, where you'll do it, and what you want to charge.</span>
-      </li>
-      <li>
-        <span class="n">2</span>
-        <strong>Work the numbers</strong>
-        <span>One short session on costs and pricing — this is where most small businesses
-          get quietly buried.</span>
-      </li>
-      <li>
-        <span class="n">3</span>
-        <strong>Get your page and print kit</strong>
-        <span>Site live on your own subdomain, plus cards and a flyer with a QR code.</span>
-      </li>
-    </ol>
-    <p class="note">HP NextGen is an independent program from HP Services. It is not sponsored
-      by, affiliated with, or endorsed by any school district. Availability varies, and we
-      keep the number of businesses small on purpose.</p>
-  </div>
-</section>
-
-<section class="apply">
-  <div class="wrap">
-    <div>
-      <p class="kicker" style="color:var(--brand)">Interested?</p>
-      <h2>Ask about the program</h2>
-      <p>You run a young person's business, or you know someone who does — reach HP Services
-        directly.</p>
-      <div class="actions" style="display:flex;gap:11px;flex-wrap:wrap">
-        <a class="btn btn-primary" href="mailto:holten.pemberton@gmail.com">Email HP Services</a>
-        <a class="btn btn-ghost" href="https://ancleaning.hpnextgen.com/">See a finished example</a>
-      </div>
-    </div>
-    <div>
-      <div class="qrbox">
-        <img src="qr.svg" alt="QR code linking to hpnextgen.com" width="168" height="168">
-        <div class="qr-cap">hpnextgen.com</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 HP Services · HP NextGen</span>
-    <span>Fate, Texas</span>
-  </div>
-</footer>
-
+<section class="section contact" id="book"><div class="wrap contact-grid">
+  <div><p class="kicker">Interested?</p><h2>Ask about<br>the program</h2><p>You run a young person’s business, or you know someone who does — reach HP Services directly. Scan the QR or email us.</p><div class="lead-actions"><a class="button" href="mailto:holten.pemberton@gmail.com">Email HP Services</a><a class="button white" href="https://ancleaning.hpnextgen.com/">See a finished example</a></div></div>
+  <aside class="contact-panel"><p class="kicker">Scan to visit</p><div class="qrbox"><img src="qr.svg" alt="QR code linking to hpnextgen.com"></div><h3>hpnextgen.com</h3><p>Scan the code, or tap the buttons to email HP Services or see the A&amp;N example that’s already live.</p><a class="button blue" href="mailto:holten.pemberton@gmail.com">Email HP Services</a><a class="button" href="https://ancleaning.hpnextgen.com/">See A&amp;N live</a></aside>
+</div></section>
+</main>
+<footer><div class="wrap footer-in"><span>© 2026 HP Services · HP NextGen</span><span>Fate, Texas</span></div></footer>
 </body>
 </html>
